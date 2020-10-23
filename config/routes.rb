@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get '/mechanics', to: 'mechanics#index'
 
   # Amusement Parks
-  get '/amusement_parks/:amusement_park_id', to: 'amusement_park#show'
+  get '/amusement_parks/:amusement_park_id', to: 'amusement_parks#show'
 end
