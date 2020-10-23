@@ -1,0 +1,3 @@
+class AmusementPark < ApplicationRecord
+  
+end
