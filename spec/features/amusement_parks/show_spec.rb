@@ -12,18 +12,18 @@ describe 'As a visitor' do
     end
     it "I see the name and price of admission for that amusement park" do
       expect(page).to have_content(@amusement_park.name)
-      expect(page).to have_content("Admissions: $#{@amusement_park.admission_price}")
+      expect(page).to have_content("Admissions: $#{@amusement_park.admission_price.round(2)}")
     end
     it "I see the names of all rides in that amusement park" do
       expect(page).to have_content("Rides:")
       within "#ride-#{@ride1.id}" do
-        expect(page).to have_content("1. #{@ride1.name}")
+        expect(page).to have_content(@ride1.name)
       end
       within "#ride-#{@ride2.id}" do
-        expect(page).to have_content("2. #{@ride2.name}")
+        expect(page).to have_content(@ride2.name)
       end
       within "#ride-#{@ride3.id}" do
-        expect(page).to have_content("3. #{@ride3.name}")
+        expect(page).to have_content(@ride3.name)
       end
     end
     it "I see the average thrill rating of this amusement parks rides" do
