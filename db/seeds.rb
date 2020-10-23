@@ -13,3 +13,8 @@ mechanic3 = Mechanic.create!(name: 'Dan Seagrave', years_of_experience: 2)
 
 # Amusement Parks
 amusement_park = AmusementPark.create!(name: "Wonder Wharf", admission_price: 50.00)
+
+# Rides
+ride1 = amusement_park.rides.create!(name: "Tickle Boat", thrill_rating: 10)
+ride2 = amusement_park.rides.create!(name: "Tea Cups", thrill_rating: 3)
+ride3 = amusement_park.rides.create!(name: "Bumper Cars", thrill_rating: 5)
