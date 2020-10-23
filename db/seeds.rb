@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Mechanics
+mechanic1 = Mechanic.create!(name: 'Steve Smith', years_of_experience: 5)
+mechanic2 = Mechanic.create!(name: 'Olivia Carter', years_of_experience: 20)
+mechanic3 = Mechanic.create!(name: 'Dan Seagrave', years_of_experience: 2)
+
+# Amusement Parks
+amusement_park = AmusementPark.create!(name: "Wonder Wharf", admission_price: 50.00)
