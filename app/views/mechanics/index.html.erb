@@ -1,0 +1,8 @@
+<%= content_tag :h1, "All Mechanics" %>
+
+<% @mechanics.each do |mechanic| %>
+  <div id="mechanic-<%= mechanic.id %>">
+    <%= content_tag :p, "Name: #{mechanic.name}" %>
+    <%= content_tag :p, "Experience: #{mechanic.years_of_experience} years" %>
+  </div>
+<% end %>
